@@ -1,0 +1,67 @@
+:root {
+  --LinearGradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  /*input errors*/
+  --RedErr: hsl(0, 100%, 66%);
+}
+input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+input:invalid {
+  border: 1px solid var(--RedErr);
+}
+input:active {
+  border: 1px solid var(--LinearGradient);
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  height: 100vh;
+}
+.cardholdername {
+  margin-top: 1rem;
+}
+.cardnumberlong {
+  margin-top: 1rem;
+}
+.carddate {
+  display: flex;
+  width: 80%;
+  margin: 0;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.formInput {
+  width: 80%;
+}
+.formInputSmall {
+  width: 20%;
+}
+
+.formInputMedium {
+  width: 100%;
+}
+.submit {
+  text-align: center;
+  width: 80%;
+  margin-top: 1rem;
+}
+.submitButton {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(33, 9, 47);
+  color: #ccc;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}

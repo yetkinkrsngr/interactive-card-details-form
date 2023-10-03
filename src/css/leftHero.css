@@ -1,0 +1,44 @@
+.cardinfo {
+  color: white;
+}
+.top-image {
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+.cardinfo {
+  position: absolute;
+  top: 0;
+  padding: 30px;
+}
+.cardnumber {
+  font-size: 26px;
+  font-weight: lighter;
+  word-spacing: 10px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  width: 120%;
+}
+.cardowner {
+  display: flex;
+  justify-content: space-between;
+  width: 110%;
+  text-transform: uppercase;
+}
+.bottom-image {
+  position: relative;
+  top: 130px;
+  left: 300px;
+  color: white;
+}
+.securityNumber {
+  position: absolute;
+  top: 25px;
+  font-size: 20px;
+  font-weight: lighter;
+  word-spacing: 10px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  width: 60%;
+  text-align: end;
+}

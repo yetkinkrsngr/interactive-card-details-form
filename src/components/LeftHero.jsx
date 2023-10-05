@@ -3,7 +3,30 @@ import cardFront from "../images/bg-card-front.png";
 import cardBack from "../images/bg-card-back.png";
 import "../css/leftHero.css";
 import cardlogo from "../images/card-logo.svg";
-const LeftHero = () => {
+
+const LeftHero = ({
+  ownername,
+  creditCardNumber,
+  expirationDate,
+  expirationMount,
+  cvc,
+}) => {
+  // If creditCardNumber is empty, set a default value
+  if (!creditCardNumber) {
+    creditCardNumber = "0000 0000 0000 0000"; // Replace with your default value
+  }
+  if (!ownername) {
+    ownername = "John Doe"; // Replace with your default ownername
+  }
+  if (!expirationDate) {
+    expirationDate = "00"; // Replace with your default date
+  }
+  if (!expirationMount) {
+    expirationMount = "00"; // Replace with your default mount
+  }
+  if (!cvc) {
+    cvc = "000"; // Replace with your default cvc
+  }
   return (
     <div className="containerLeftHero">
       <div className="top-image">
@@ -13,19 +36,20 @@ const LeftHero = () => {
         <div className="cardinfo">
           <img src={cardlogo} className="cardlogo" alt="" />
           <div className="cardnumber">
-            <p>0123 4567 8901 2345</p>
+            <p className="cardNumberDetail">{creditCardNumber}</p>
           </div>
           <div className="cardowner">
-            <p className="ownername">Yetkin karasungur</p>
+            <p className="ownername">{ownername}</p>
             <p className="lastdate">
-              <span className="date">30</span>/<span className="mount">04</span>
+              <span className="date">{expirationDate}</span>/
+              <span className="mount">{expirationMount}</span>
             </p>
           </div>
         </div>
       </div>
       <div className="bottom-image">
         <img src={cardBack} alt="" />
-        <p className="securityNumber">000</p>
+        <p className="securityNumber">{cvc}</p>
       </div>
     </div>
   );

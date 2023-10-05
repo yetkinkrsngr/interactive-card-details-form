@@ -10,6 +10,7 @@
   position: absolute;
   top: 0;
   padding: 30px;
+  width: 100%;
 }
 .cardnumber {
   font-size: 26px;
@@ -18,11 +19,12 @@
   margin-top: 80px;
   margin-bottom: 10px;
   width: 120%;
+  position: relative;
 }
 .cardowner {
   display: flex;
   justify-content: space-between;
-  width: 110%;
+  width: 75%;
   text-transform: uppercase;
 }
 .bottom-image {
@@ -41,4 +43,23 @@
   margin-bottom: 10px;
   width: 60%;
   text-align: end;
+}
+@media (max-width: 400px) {
+  .top-image {
+    border: 1px solid red;
+
+    top: 60px;
+    left: 0;
+  }
+  .cardcover {
+    border: 3px solid blue;
+    width: 95%;
+  }
+  .cardcover img {
+    width: 100%;
+  }
+  .bottom-image {
+    top: 0;
+    left: 0;
+  }
 }

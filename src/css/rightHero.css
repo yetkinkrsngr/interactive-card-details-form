@@ -65,3 +65,32 @@ input:active {
   letter-spacing: 2px;
   font-weight: bold;
 }
+@media (max-width: 400px) {
+  .formContainer {
+    align-items: start;
+    overflow: hidden;
+    min-height: 60vh;
+    display: block;
+  }
+  .cardholdername,
+  .cardnumberlong {
+    margin-bottom: -15px;
+  }
+  .cardholdername input,
+  .cardnumberlong input {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .formInputSmall {
+    width: 40%;
+  }
+  .carddate {
+    width: 100%;
+  }
+  .carddateright {
+    margin-left: 30px;
+  }
+  .submit {
+    width: 100%;
+  }
+}

@@ -96,7 +96,7 @@ const RightHero = ({ onCreditCardChange }) => {
               />
             </div>
             <div className="carddateright">
-              <p className="formTitle">{handleCvcChange}</p>
+              <p className="formTitle">CVC</p>
               <input
                 className="formInputMedium"
                 type="text"
